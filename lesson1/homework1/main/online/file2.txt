@@ -1,0 +1,6 @@
+name:Andrii
+age:22
+city:Lviv
+name:Vova
+age:19
+city:Kalush

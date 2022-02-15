@@ -1,0 +1,6 @@
+name:Viktor
+age:58
+city:Odessa
+name:Vova
+age:19
+city:Kalush
