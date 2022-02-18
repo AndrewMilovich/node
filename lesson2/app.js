@@ -17,9 +17,6 @@ app.get('/login', (req, res) => {
     res.render('login');
 })
 
-app.get('/user', (req, res) => {
-    res.render('user');
-})
 
 app.get('/users', (req, res) => {
     const {age, city} = req.query;
@@ -74,7 +71,8 @@ app.get('/signIn', (req, res) => {
 app.post('/signIn', (req, res) => {
 
     let filter = [...users];
-    filter = users.filter(value => value.email === req.body.email && value.password === req.body.password)
+
+    filter = users.find(value => value.email === req.body.email && value.password === req.body.password)
 
     if (filter) {
         res.render('users', {filter});
