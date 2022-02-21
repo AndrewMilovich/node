@@ -67,6 +67,9 @@ app.get('/errorPage', (req, res) => {
 app.get('/signIn', (req, res) => {
     res.render('signIn');
 })
+app.get('/user', (req, res) => {
+    res.render('user');
+})
 
 app.post('/signIn', (req, res) => {
 
@@ -75,7 +78,7 @@ app.post('/signIn', (req, res) => {
     filter = users.find(value => value.email === req.body.email && value.password === req.body.password)
 
     if (filter) {
-        res.render('users', {filter});
+        res.render('user', {filter});
         return
     }
 
