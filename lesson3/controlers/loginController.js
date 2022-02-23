@@ -7,13 +7,7 @@ class LoginController {
     }
 
     renderLoginPost(req, res) {
-        const filterEmail = users.find(value => value.email === req.body.email)
-        if (filterEmail) {
-            res.redirect('/errorPage');
-            return;
-        }
-
-        users.push({...req.body, id: users.length + 1});
+        users.push({...req.body, id: new Date().getTime()});
         res.redirect('/users')
 
     }

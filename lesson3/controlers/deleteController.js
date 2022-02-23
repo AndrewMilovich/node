@@ -1,10 +1,12 @@
- const users=require('../db/users')
+const users = require('../db/users')
 
-  class DeleteController {
-    renderDelete(req,res){
+class DeleteController {
+    renderDelete(req, res) {
         const {userId} = req.params;
-        users.splice(+userId - 1, 1);
+        const index = users.findIndex(value => value.id === userId)
+        users.splice(index, 1);
         res.redirect('/users');
     }
-  }
-  module.exports=new DeleteController;
+}
+
+module.exports = new DeleteController;

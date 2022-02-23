@@ -1,10 +1,17 @@
 function validUsers(req, res, next) {
+
     const {firstName, lastName, email, password, age, city} = req.body
 
-    if (!firstName || !lastName || !email || !password || !age || !city) {
-        throw new Error('input all fields').message
+    try {
+        if (!firstName || !lastName || !email || !password || !age || !city) {
+            throw new Error('input all fields')
+        }
+
+        next()
+    } catch (e) {
+        res.status(400).send(e.message)
     }
-    next()
+
 }
 
 module.exports = validUsers

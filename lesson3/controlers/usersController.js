@@ -13,7 +13,6 @@ class UsersController {
         if (city) {
             filter = filter.filter(value => value.city === city)
         }
-
         res.render('users', {filter});
     }
 

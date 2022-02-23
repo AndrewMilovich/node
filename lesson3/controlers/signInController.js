@@ -14,8 +14,7 @@ class SignInController {
             res.render('user', {user});
             return
         }
-
-        res.render('notFoundUser');
+            res.render('notFoundUser');
     }
 }
 
