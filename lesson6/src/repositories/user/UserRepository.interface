@@ -1,0 +1,9 @@
+import {IUser} from "../../interface/user.interface.js";
+
+export interface IUserRepository {
+
+    createUser(user: IUser): Promise<IUser>;
+    getUser(): Promise<IUser>;
+    updateUser(user:IUser, id:number):Promise<any>;
+    deleteUser(id:number):Promise<any>
+}
