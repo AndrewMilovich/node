@@ -25,9 +25,9 @@ class TokenService {
     }
 
     public verifyToken(authToken: string, tokenType = 'access') :IUserPayload {
-        let secretWorld = 'SECRET_ACCESS_KEY';
+        let secretWorld = config.SECRET_ACCESS_KEY;
         if (tokenType === 'refresh') {
-            secretWorld = 'SECRET_REFRESH_KEY';
+            secretWorld = config.EXPIRES_IN_REFRESH;
         }
         return jwt.verify(authToken, secretWorld as string) as IUserPayload;
     }
