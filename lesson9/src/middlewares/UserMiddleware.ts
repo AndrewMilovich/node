@@ -1,7 +1,9 @@
 import { NextFunction, Response } from 'express';
 import { IRequestExtendedInterface } from '../interface/requestExtended.interface';
 import { userRepositories } from '../repositories/user/userRepositories';
-import { userValidator } from '../validator/userValidator';
+import { paramsValidator, userValidator } from '../validator';
+import { ErrorHandler } from '../error/ErrorHandler';
+
 // import { IUser } from '../interface/user.interface';
 
 class UserMiddleware {
@@ -11,15 +13,15 @@ class UserMiddleware {
         next: NextFunction,
     ): Promise<void> {
         try {
-            const userFromDb = userRepositories.getUserByEmail(req.body.email);
+            const userFromDb = await userRepositories.getUserByEmail(req.body.email);
             if (!userFromDb) {
-                res.status(400).json('User not found');
+                next(new ErrorHandler('User not found', 400));
                 return;
             }
-            req.user = await userFromDb;
+            req.user = userFromDb;
             next();
-        } catch (e) {
-            res.status(400).json(e);
+        } catch (e:any) {
+            next(e);
         }
     }
 
@@ -31,12 +33,12 @@ class UserMiddleware {
         try {
             const { error, value } = userValidator.createUser.validate(req.body);
             if (error) {
-                throw new Error(error.details[0].message);
+                next(new ErrorHandler(error.details[0].message));
             }
             req.body = value;
             next();
         } catch (e:any) {
-            res.status(400).json(e.message);
+            next(e);
         }
     }
 
@@ -48,30 +50,30 @@ class UserMiddleware {
         try {
             const { error, value } = userValidator.loginUser.validate(req.body);
             if (error) {
-                throw new Error('wrong email or password');
+                next(new ErrorHandler('wrong email or password'));
             }
             req.body = value;
             next();
         } catch (e:any) {
-            res.status(400).json(e.message);
+            next(e);
         }
     }
-    // public checkUser(
-    //     req: IRequestExtendedInterface,
-    //     res: Response,
-    //     next: NextFunction,
-    // ) {
-    //     try {
-    //         const {
-    //             firstName, lastName, password, email, age, phone,
-    //         } = req.body as IUser;
-    //         if (!firstName || !lastName || !password || !email || !phone || !age) {
-    //             throw new Error('enter all fields!!!');
-    //         }
-    //         next();
-    //     } catch (e:any) {
-    //         res.status(400).json(e.message);
-    //     }
-    // }
+
+    async validId(
+        req: IRequestExtendedInterface,
+        res: Response,
+        next: NextFunction,
+    ):Promise<void> {
+        try {
+            const { error, value } = paramsValidator.id.validate(req.params);
+            if (error) {
+                next(new ErrorHandler('wrong id'));
+            }
+            req.params = value;
+            next();
+        } catch (e:any) {
+            next(e);
+        }
+    }
 }
 export const userMiddleware = new UserMiddleware();

@@ -22,11 +22,12 @@ class UserController {
         return res.json(getUser);
     }
 
-    public async getUserByEmail(req:{body:{email:string}}, res:Response):Promise<Response<IUser>> {
-        const { email } = req.body;
-        const userEmail = await userService.getUserByEmail(email);
-        return res.json(userEmail);
-    }
+    // public async getUserByEmail(req:{body:{email:string}},
+    // res:Response):Promise<Response<IUser>> {
+    //     const { email } = req.body;
+    //     const userEmail = await userService.getUserByEmail(email);
+    //     return res.json(userEmail);
+    // }
 
     public async updateUser(
         req: { params: { id: string; }; body: IUser; },

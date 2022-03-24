@@ -2,6 +2,7 @@ import { NextFunction, Response } from 'express';
 import { tokenService, userService } from '../services';
 import { IRequestExtendedInterface } from '../interface/requestExtended.interface';
 import { tokenRepository } from '../repositories/token/tokenRepository';
+import { ErrorHandler } from '../error/ErrorHandler';
 
 class AuthMiddleware {
     public async checkAccessToken(
@@ -12,24 +13,23 @@ class AuthMiddleware {
         try {
             const authToken = req.get('Authorization');
             if (!authToken) {
-                throw new Error('no token');
+                next(new ErrorHandler('no token', 404));
+                return;
             }
             const { userEmail } = tokenService.verifyToken(authToken);
             const tokenPairFromDb = await tokenRepository.findByParams({ accessToken: authToken });
             if (!tokenPairFromDb) {
-                throw new Error('no token');
+                next(new ErrorHandler('no token', 404));
             }
             const userFromToken = await userService.getUserByEmail(userEmail);
             if (!userFromToken) {
-                throw new Error('wrong token');
+                next(new ErrorHandler('no token', 404));
+                return;
             }
             req.user = userFromToken;
             next();
         } catch (e: any) {
-            res.json({
-                status: 401,
-                message: e.message,
-            });
+            next(e);
         }
     }
 
@@ -41,24 +41,24 @@ class AuthMiddleware {
         try {
             const authToken = req.get('Authorization');
             if (!authToken) {
-                throw new Error('no token');
+                next(new ErrorHandler('no token', 404));
+                return;
             }
             const { userEmail } = tokenService.verifyToken(authToken, 'refresh');
             const tokenPairFromDb = await tokenRepository.findByParams({ refreshToken: authToken });
             if (!tokenPairFromDb) {
-                throw new Error('no token');
+                next(new ErrorHandler('no token', 404));
+                return;
             }
             const userFromToken = await userService.getUserByEmail(userEmail);
             if (!userFromToken) {
-                throw new Error('wrong token');
+                next(new ErrorHandler('no token', 404));
+                return;
             }
             req.user = userFromToken;
             next();
         } catch (e: any) {
-            res.json({
-                status: 401,
-                message: e.message,
-            });
+            next(e);
         }
     }
 }

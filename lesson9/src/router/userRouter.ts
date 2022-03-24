@@ -1,12 +1,12 @@
 import { Router } from 'express';
 import { userController } from '../controller';
+import { userMiddleware } from '../middlewares';
 
 const router = Router();
-router.post('/', userController.createdUser);
-router.post('/email', userController.getUserByEmail);
+
 router.get('/', userController.getUser);
 router.get('/:id', userController.getUserById);
-router.patch('/:id', userController.updateUser);
-router.delete('/:id', userController.deleteUser);
+router.patch('/:id', userMiddleware.validId, userMiddleware.validUser, userController.updateUser);
+router.delete('/:id', userMiddleware.validId, userController.deleteUser);
 
 export const userRouter = router;
