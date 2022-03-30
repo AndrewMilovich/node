@@ -4,6 +4,8 @@ import { createConnection } from 'typeorm';
 import { apiRouter } from './router';
 import { config } from './config/config';
 
+export const RootDir = __dirname;
+
 const app = express();
 app.use(express.json());
 app.use(express.urlencoded());

@@ -29,10 +29,12 @@ class AuthController {
 
     async login(req: IRequestExtendedInterface, res: Response, next:NextFunction) {
         try {
-            const { id, email, password: hashPassword } = req.user as IUser;
+            const {
+                id, lastName, email, password: hashPassword,
+            } = req.user as IUser;
             const { password } = req.body;
 
-            await emailService.sendMail(email, emailActionEnum.WELCOME);
+            await emailService.sendMail(email, emailActionEnum.WELCOME, { user: lastName });
             await authService.comparePassword(password, hashPassword);
             const { refreshToken, accessToken } = tokenService.generateTokenPair(
                 { userId: id, userEmail: email },
