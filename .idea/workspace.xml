@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="0fd2b49a-6559-4c6e-90b3-a15342b1b5ec" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/lesson10/.env" beforeDir="false" afterPath="$PROJECT_DIR$/lesson10/.env" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+        <option value="TypeScript File" />
+        <option value="CSS File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="PUSH_AUTO_UPDATE" value="true" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
+  <component name="ProjectId" id="259EZIT6TfT8kLel6gUNjPevJNM" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="autoscrollFromSource" value="true" />
+    <option name="compactDirectories" value="true" />
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+    <option name="showMembers" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File" value="PLAIN_TEXT" />
+    <property name="javascript.nodejs.core.library.configured.version" value="16.13.1" />
+    <property name="javascript.nodejs.core.library.typings.version" value="16.11.25" />
+    <property name="js.last.introduce.type" value="CONST" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.standard" value="true" />
+    <property name="node.js.detected.package.stylelint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.standard" value="" />
+    <property name="node.js.selected.package.stylelint" value="" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="ts.external.directory.path" value="C:\Program Files\JetBrains\WebStorm 2021.2.2\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\HP 820 G4\WebstormProjects\node" />
+      <recent name="C:\Users\HP 820 G4\WebstormProjects\node\lesson3" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\HP 820 G4\WebstormProjects\node\lesson10" />
+      <recent name="C:\Users\HP 820 G4\WebstormProjects\node\lesson6\src\repositories\comment" />
+      <recent name="C:\Users\HP 820 G4\WebstormProjects\node\lesson6\src\repositories\post" />
+      <recent name="C:\Users\HP 820 G4\WebstormProjects\node\lesson6\src\repositories\user" />
+      <recent name="C:\Users\HP 820 G4\WebstormProjects\node\lesson6\src" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="0fd2b49a-6559-4c6e-90b3-a15342b1b5ec" name="Changes" comment="" />
+      <created>1644930956411</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1644930956411</updated>
+      <workItem from="1644930957646" duration="925000" />
+      <workItem from="1644934587098" duration="5871000" />
+      <workItem from="1644943723468" duration="8728000" />
+      <workItem from="1645113993398" duration="5213000" />
+      <workItem from="1645120300224" duration="18344000" />
+      <workItem from="1645198379451" duration="22000" />
+      <workItem from="1645200824414" duration="1400000" />
+      <workItem from="1645451038389" duration="7157000" />
+      <workItem from="1645535840184" duration="22000" />
+      <workItem from="1645536095944" duration="6526000" />
+      <workItem from="1645543802090" duration="5447000" />
+      <workItem from="1645550916235" duration="8402000" />
+      <workItem from="1645621255753" duration="57000" />
+      <workItem from="1645621389238" duration="65000" />
+      <workItem from="1645621481482" duration="323000" />
+      <workItem from="1645621816739" duration="1241000" />
+      <workItem from="1645623077939" duration="7103000" />
+      <workItem from="1645630879473" duration="716000" />
+      <workItem from="1645729857851" duration="5789000" />
+      <workItem from="1645735918097" duration="1786000" />
+      <workItem from="1645791640636" duration="648000" />
+      <workItem from="1645967327337" duration="2069000" />
+      <workItem from="1646828657338" duration="7893000" />
+      <workItem from="1646837686598" duration="23732000" />
+      <workItem from="1646930614896" duration="105000" />
+      <workItem from="1646930728572" duration="2389000" />
+      <workItem from="1646933146150" duration="2502000" />
+      <workItem from="1646935689534" duration="747000" />
+      <workItem from="1646994141294" duration="4462000" />
+      <workItem from="1646999266881" duration="13661000" />
+      <workItem from="1647254566953" duration="21521000" />
+      <workItem from="1647346014906" duration="5592000" />
+      <workItem from="1647356789112" duration="32504000" />
+      <workItem from="1647614595394" duration="600000" />
+      <workItem from="1647634355208" duration="696000" />
+      <workItem from="1647699187977" duration="13126000" />
+      <workItem from="1647896056697" duration="1185000" />
+      <workItem from="1647947372837" duration="13816000" />
+      <workItem from="1647971066289" duration="2704000" />
+      <workItem from="1647973807635" duration="6095000" />
+      <workItem from="1648119759101" duration="14410000" />
+      <workItem from="1648467548683" duration="5114000" />
+      <workItem from="1648494635769" duration="1376000" />
+      <workItem from="1648496242650" duration="6763000" />
+      <workItem from="1648560237798" duration="10347000" />
+      <workItem from="1648641458751" duration="96000" />
+    </task>
+    <task id="LOCAL-00001" summary="hw 1 done">
+      <created>1644949161854</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1644949161854</updated>
+    </task>
+    <task id="LOCAL-00002" summary="cw 1 done">
+      <created>1644954253860</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1644954253860</updated>
+    </task>
+    <task id="LOCAL-00003" summary="cw 1 done">
+      <created>1645119969325</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1645119969325</updated>
+    </task>
+    <task id="LOCAL-00004" summary="done all homework and practic">
+      <created>1645197568696</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1645197568696</updated>
+    </task>
+    <task id="LOCAL-00005" summary="done all homework and practic">
+      <created>1645201023668</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1645201023668</updated>
+    </task>
+    <task id="LOCAL-00006" summary="done all homework and practic">
+      <created>1645205457953</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1645205457953</updated>
+    </task>
+    <task id="LOCAL-00007" summary="done all homework 3">
+      <created>1645458180929</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1645458180929</updated>
+    </task>
+    <task id="LOCAL-00008" summary="done all homework 3">
+      <created>1645631490833</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1645631490833</updated>
+    </task>
+    <task id="LOCAL-00009" summary="done all homework 5">
+      <created>1646935510947</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1646935510948</updated>
+    </task>
+    <task id="LOCAL-00010" summary="done all homework 5">
+      <created>1646935790607</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1646935790607</updated>
+    </task>
+    <task id="LOCAL-00011" summary="refresh access token">
+      <created>1647529139961</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1647529139961</updated>
+    </task>
+    <task id="LOCAL-00012" summary="refresh access token">
+      <created>1647529485804</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1647529485804</updated>
+    </task>
+    <task id="LOCAL-00013" summary="refresh access token">
+      <created>1647955988175</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1647955988175</updated>
+    </task>
+    <task id="LOCAL-00014" summary="validate login and user">
+      <created>1647981314658</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1647981314658</updated>
+    </task>
+    <task id="LOCAL-00015" summary="add custom error">
+      <created>1648143286812</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1648143286812</updated>
+    </task>
+    <task id="LOCAL-00016" summary="add sendmail">
+      <created>1648500360922</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1648500360922</updated>
+    </task>
+    <task id="LOCAL-00017" summary="add sendmail(temPlates)">
+      <created>1648641280927</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1648641280928</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+    <option name="exactExcludedFiles">
+      <list>
+        <option value="$PROJECT_DIR$/lesson5/node_modules/tsc-watch/example/main.js" />
+        <option value="$PROJECT_DIR$/lesson8/node_modules/tsc-watch/example/main.js" />
+        <option value="$PROJECT_DIR$/lesson6/node_modules/tsc-watch/example/main.js" />
+        <option value="$PROJECT_DIR$/lesson9/node_modules/tsc-watch/example/main.js" />
+        <option value="$PROJECT_DIR$/lesson10/node_modules/tsc-watch/example/main.js" />
+      </list>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="hw 1 done" />
+    <MESSAGE value="cw 1 done" />
+    <MESSAGE value="done all homework and practic" />
+    <MESSAGE value="done all homework 3" />
+    <MESSAGE value="done all homework 5" />
+    <MESSAGE value="refresh access token" />
+    <MESSAGE value="validate login and user" />
+    <MESSAGE value="add custom error" />
+    <MESSAGE value="add sendmail" />
+    <MESSAGE value="add sendmail(temPlates)" />
+    <option name="LAST_COMMIT_MESSAGE" value="add sendmail(temPlates)" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/lesson4/src/users.ts</url>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+</project>
