@@ -47,4 +47,20 @@ export const userValidator = {
             .trim()
             .required(),
     }),
+    emailUser: Joi.object({
+        email: Joi
+            .string()
+            .regex(regex.Email)
+            .trim()
+            .required()
+            .messages({ 'string.pattern.base': 'email not valid' }),
+    }),
+    passwordUser: Joi.object({
+        password: Joi
+            .string()
+            .regex(regex.Password)
+            .trim()
+            .required()
+            .messages({ 'string.pattern.base': 'password not valid' }),
+    }),
 };

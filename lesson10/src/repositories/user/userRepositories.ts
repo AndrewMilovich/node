@@ -38,6 +38,13 @@ class UserRepositories extends Repository<User> {
             .update({ id }, { email, password });
     }
 
+    public async updatePassword(user:Partial<IUser>, id:number):Promise<any> {
+        const { password } = user;
+        return getManager()
+            .getRepository(User)
+            .update({ id }, { password });
+    }
+
     public async deleteUser(id:number):Promise<any> {
         return getManager()
             .getRepository(User)

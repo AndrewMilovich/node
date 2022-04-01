@@ -9,4 +9,7 @@ route.post('/login', userMiddleware.validLogin, userMiddleware.checkIsUserExist,
 route.post('/logout', authMiddleware.checkAccessToken, authController.logout);
 route.post('/refresh', authMiddleware.checkRefreshToken, authController.refresh);
 
+route.post('/forgotPassword', userMiddleware.chekValidEmail, userMiddleware.checkIsUserExist, authController.sendForgotPassword);
+route.post('/changePassword', userMiddleware.chekValidPassword, authMiddleware.checkActionToken, authController.setPassword);
+
 export const authRouter = route;

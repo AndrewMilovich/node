@@ -42,6 +42,43 @@ class UserMiddleware {
         }
     }
 
+    public async chekValidPassword(
+        req: IRequestExtendedInterface,
+        res: Response,
+        next: NextFunction,
+    ):Promise<void> {
+        try {
+            const { password } = req.body;
+
+            const { error, value } = await userValidator.passwordUser.validate({ password });
+            if (error) {
+                next(new ErrorHandler(error.details[0].message, 401));
+                return;
+            }
+            req.body = value;
+            next();
+        } catch (e:any) {
+            next(e);
+        }
+    }
+
+    async chekValidEmail(
+        req: IRequestExtendedInterface,
+        res: Response,
+        next: NextFunction,
+    ):Promise<void> {
+        try {
+            const { error, value } = userValidator.emailUser.validate(req.body);
+            if (error) {
+                next(new ErrorHandler(error.details[0].message, 401));
+            }
+            req.body = value;
+            next();
+        } catch (e:any) {
+            next(e);
+        }
+    }
+
     async validLogin(
         req: IRequestExtendedInterface,
         res: Response,

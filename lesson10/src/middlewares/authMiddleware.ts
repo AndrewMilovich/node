@@ -3,6 +3,7 @@ import { tokenService, userService } from '../services';
 import { IRequestExtendedInterface } from '../interface/requestExtended.interface';
 import { tokenRepository } from '../repositories/token/tokenRepository';
 import { ErrorHandler } from '../error/ErrorHandler';
+import { actionTokenRepository } from '../repositories/actionToken/actionTokenRepository';
 
 class AuthMiddleware {
     public async checkAccessToken(
@@ -51,6 +52,39 @@ class AuthMiddleware {
                 return;
             }
             const userFromToken = await userService.getUserByEmail(userEmail);
+            if (!userFromToken) {
+                next(new ErrorHandler('no token', 404));
+                return;
+            }
+            req.user = userFromToken;
+            next();
+        } catch (e: any) {
+            next(e);
+        }
+    }
+
+    public async checkActionToken(
+        req: IRequestExtendedInterface,
+        res: Response,
+        next: NextFunction,
+    ) {
+        try {
+            const actionToken = req.get('Authorization');
+
+            if (!actionToken) {
+                next(new ErrorHandler('no token', 404));
+                return;
+            }
+            const { userEmail } = tokenService.verifyToken(actionToken, 'action');
+
+            const tokenFromDb = await actionTokenRepository.findByParams({ actionToken });
+
+            if (!tokenFromDb) {
+                next(new ErrorHandler('no token', 404));
+                return;
+            }
+            const userFromToken = await userService.getUserByEmail(userEmail);
+
             if (!userFromToken) {
                 next(new ErrorHandler('no token', 404));
                 return;
