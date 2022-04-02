@@ -1,0 +1,17 @@
+.footer {
+    background-color: #aacfff;
+}
+
+#id {
+    background-color: #a1ffae;
+}
+
+.welcome{
+    background: gold;
+    border: 1px solid blanchedalmond;
+    margin: 10px;
+    padding: 10px;
+}
+.block{
+    background: blue;
+}
