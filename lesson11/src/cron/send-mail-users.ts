@@ -6,10 +6,10 @@ import { emailActionEnum } from '../constants';
 export const sendMailUsers = () => {
     cron.schedule('*/30 * * * * *', async () => {
         const getUser = await userService.getUser();
-        return getUser.map((user) => emailService.sendMail(
-            user.email,
+        await Promise.allSettled(getUser.map(async (u) => emailService.sendMail(
+            u.email,
             emailActionEnum.WELCOME,
-            { user: user.lastName },
-        ));
+            { user: u.lastName },
+        )));
     });
 };
