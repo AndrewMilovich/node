@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f1fd8add-c8b5-4a22-95ac-796b1af4a842" name="Changes" comment="add forgot Password and update password user">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lesson11/src/cron/send-mail-users.ts" beforeDir="false" afterPath="$PROJECT_DIR$/lesson11/src/cron/send-mail-users.ts" afterDir="false" />
-    </list>
+    <list default="true" id="f1fd8add-c8b5-4a22-95ac-796b1af4a842" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -71,7 +68,7 @@
       <workItem from="1648823563583" duration="361000" />
       <workItem from="1648903250501" duration="5709000" />
       <workItem from="1648916370758" duration="5809000" />
-      <workItem from="1649068996858" duration="1226000" />
+      <workItem from="1649068996858" duration="1918000" />
     </task>
     <task id="LOCAL-00001" summary="add forgot Password and update password user">
       <created>1648823796236</created>
@@ -94,7 +91,14 @@
       <option name="project" value="LOCAL" />
       <updated>1648922260295</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="add forgot Password and update password user">
+      <created>1649075446988</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1649075446988</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
