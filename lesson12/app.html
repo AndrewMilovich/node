@@ -52,10 +52,11 @@
     e.preventDefault()
   }
   socket.on('message-user',(data)=>{
-    message.push(data.message)
+     message.push(data.message);
       chat.innerHTML=`${data.message}`
 console.log(message)
   })
+
 </script>
 
 </body>

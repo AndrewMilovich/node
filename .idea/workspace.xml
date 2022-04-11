@@ -2,11 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f1fd8add-c8b5-4a22-95ac-796b1af4a842" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/lesson12/app.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lesson12/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/lesson12/.eslintcache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lesson12/src/app.ts" beforeDir="false" afterPath="$PROJECT_DIR$/lesson12/src/app.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lesson12/src/services/s3.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/lesson12/src/services/s3.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lesson12/app.html" beforeDir="false" afterPath="$PROJECT_DIR$/lesson12/app.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -82,7 +79,7 @@
       <workItem from="1649174152205" duration="4981000" />
       <workItem from="1649239239186" duration="16837000" />
       <workItem from="1649336473492" duration="8853000" />
-      <workItem from="1649683731245" duration="9799000" />
+      <workItem from="1649683731245" duration="10740000" />
     </task>
     <task id="LOCAL-00001" summary="add forgot Password and update password user">
       <created>1648823796236</created>
@@ -126,7 +123,14 @@
       <option name="project" value="LOCAL" />
       <updated>1649274271587</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="add messend console">
+      <created>1649694304319</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1649694304319</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -148,7 +152,8 @@
     <MESSAGE value="add Pagination and &#10;mailing list" />
     <MESSAGE value="add forgot Password and update password user" />
     <MESSAGE value="add aws" />
-    <option name="LAST_COMMIT_MESSAGE" value="add aws" />
+    <MESSAGE value="add messend console" />
+    <option name="LAST_COMMIT_MESSAGE" value="add messend console" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
