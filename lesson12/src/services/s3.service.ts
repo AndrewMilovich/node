@@ -10,8 +10,8 @@ class S3Service {
     constructor() {
         this.Bucket = new S3({
             region: config.REGION,
-            accessKeyId: 'AKIASESI6M2IWTXWXBFS',
-            secretAccessKey: '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',
+            accessKeyId: config.ACCESS_KEY_ID,
+            secretAccessKey: config.SECRET_ACCESS_ID,
         });
     }
 

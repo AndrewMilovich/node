@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <script src="https://cdn.socket.io/4.4.1/socket.io.min.js" integrity="sha384-fKnu0iswBIqkjxrhQCTZ7qlLHOFEgNkRmK2vaO/LbTZSXdJfAu6ewRBdwHPhBo/H" crossorigin="anonymous"></script>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+<div id="chat"></div>
+<div>
+  <form id="sendForm">
+    <input type="text" id="textChat">
+    <button id="send">send</button>
+  </form>
+
+</div>
+<button id="musicChat">music chat</button>
+<button id="filmChat">film chat</button>
+
+<script>
+
+  const socket = io('http://localhost:5000', { query: `userId=8&accessToken=754845` });
+  console.log(socket);
+
+  const musicChat = document.getElementById('musicChat');
+  const filmChat = document.getElementById('filmChat');
+  const textChat = document.getElementById('textChat');
+  const sendForm = document.getElementById('sendForm');
+  let chat = document.getElementById('chat');
+
+  const message=[]
+  musicChat.onclick = () => {
+    socket.emit('join_room', {id: 1});
+    console.log('welcome to a music Chat')
+
+  }
+
+  filmChat.onclick = () => {
+    socket.emit('join_room', {id: 2});
+    console.log('welcome to a film Chat')
+  }
+
+  // socket.on('user-room', (data) => {
+  //   console.log('-=-=-=-=-=-=-=-=-=-=');
+  //   console.log(data)
+  //   console.log('-=-=-=-=-=-=-=-=-=-=');
+  // })
+
+  sendForm.onsubmit=(e)=>{
+    let message = textChat.value;
+    socket.emit('message-list',{id:1, message})
+    e.preventDefault()
+  }
+  socket.on('message-user',(data)=>{
+    message.push(data.message)
+      chat.innerHTML=`${data.message}`
+console.log(message)
+  })
+</script>
+
+</body>
+</html>

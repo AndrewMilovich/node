@@ -2,86 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f1fd8add-c8b5-4a22-95ac-796b1af4a842" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/lesson12/.eslintcache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lesson12/.eslintignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lesson12/.eslintrc.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lesson12/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lesson12/nodemon.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lesson12/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lesson12/src/app.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lesson12/src/config/config.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lesson12/src/constants/constants.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lesson12/src/constants/cookie.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lesson12/src/constants/email.info.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lesson12/src/constants/enums.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lesson12/src/constants/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lesson12/src/constants/regex.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lesson12/src/controller/authController.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lesson12/src/controller/commentController.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lesson12/src/controller/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lesson12/src/controller/postController.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lesson12/src/controller/userController.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lesson12/src/cron/get-new-users.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lesson12/src/cron/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lesson12/src/cron/send-mail-users.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lesson12/src/email-templates/Container.pug" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lesson12/src/email-templates/block.pug" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lesson12/src/email-templates/forgotPassword.pug" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lesson12/src/email-templates/style.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lesson12/src/email-templates/welcome.pug" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lesson12/src/entity/actionToken.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lesson12/src/entity/comment.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lesson12/src/entity/commonFields.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lesson12/src/entity/post.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lesson12/src/entity/token.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lesson12/src/entity/user.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lesson12/src/enums/ActionTokenTypes.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lesson12/src/error/ErrorHandler.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lesson12/src/interface/comments.interface.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lesson12/src/interface/icommonFields.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lesson12/src/interface/pagination.interface.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lesson12/src/interface/post.interface.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lesson12/src/interface/requestExtended.interface.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lesson12/src/interface/token.interface.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lesson12/src/interface/user.interface.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lesson12/src/middlewares/UserMiddleware.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lesson12/src/middlewares/authMiddleware.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lesson12/src/middlewares/fileMiddleware.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lesson12/src/middlewares/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lesson12/src/migration/1646833472561-Users.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lesson12/src/migration/1646833501804-Posts.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lesson12/src/migration/1646852498175-Comments.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lesson12/src/migration/1647360211825-Token.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lesson12/src/migration/1647710941513-addAccessToken.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lesson12/src/migration/1648736558598-addActionToken.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lesson12/src/repositories/actionToken/actionRepository.interface.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lesson12/src/repositories/actionToken/actionTokenRepository.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lesson12/src/repositories/comment/commentRepositories.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lesson12/src/repositories/post/postRepositories.interface.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lesson12/src/repositories/post/postRepostories.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lesson12/src/repositories/token/tokenRepositori.interface.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lesson12/src/repositories/token/tokenRepository.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lesson12/src/repositories/user/UserRepository.interface" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lesson12/src/repositories/user/userRepositories.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lesson12/src/router/apiRouter.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lesson12/src/router/authRouter.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lesson12/src/router/commentRouter.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lesson12/src/router/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lesson12/src/router/postRouter.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lesson12/src/router/userRouter.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lesson12/src/services/authService.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lesson12/src/services/commentService.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lesson12/src/services/emailService.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lesson12/src/services/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lesson12/src/services/postService.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lesson12/src/services/s3.service.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lesson12/src/services/tokenService.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lesson12/src/services/userService.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lesson12/src/validator/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lesson12/src/validator/paramsValidator.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lesson12/src/validator/userValidator.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lesson12/tsconfig.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lesson12/app.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lesson12/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/lesson12/.eslintcache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lesson12/src/app.ts" beforeDir="false" afterPath="$PROJECT_DIR$/lesson12/src/app.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lesson12/src/services/s3.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/lesson12/src/services/s3.service.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -93,6 +18,7 @@
       <list>
         <option value="Pug File" />
         <option value="TypeScript File" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -117,6 +43,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="TODO_SCOPE" value="All Places" />
@@ -153,7 +80,9 @@
       <workItem from="1649068996858" duration="2526000" />
       <workItem from="1649169882926" duration="1385000" />
       <workItem from="1649174152205" duration="4981000" />
-      <workItem from="1649239239186" duration="13483000" />
+      <workItem from="1649239239186" duration="16837000" />
+      <workItem from="1649336473492" duration="8853000" />
+      <workItem from="1649683731245" duration="9799000" />
     </task>
     <task id="LOCAL-00001" summary="add forgot Password and update password user">
       <created>1648823796236</created>
@@ -190,7 +119,14 @@
       <option name="project" value="LOCAL" />
       <updated>1649076163331</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="add aws">
+      <created>1649274271587</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1649274271587</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -211,7 +147,8 @@
     <MESSAGE value="add forgot Password and update passwoed user" />
     <MESSAGE value="add Pagination and &#10;mailing list" />
     <MESSAGE value="add forgot Password and update password user" />
-    <option name="LAST_COMMIT_MESSAGE" value="add forgot Password and update password user" />
+    <MESSAGE value="add aws" />
+    <option name="LAST_COMMIT_MESSAGE" value="add aws" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
