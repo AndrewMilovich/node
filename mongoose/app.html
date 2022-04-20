@@ -8,7 +8,7 @@
     <title>Title</title>
 </head>
 <body>
-<div id="chat" class="chat"></div>
+<div id="chat"></div>
 <div>
     <form id="sendForm">
         <input type="text" id="textChat">
@@ -20,7 +20,6 @@
 <button id="filmChat">film chat</button>
 
 <script>
-
 
     const socket = io('http://localhost:5200', {query: `userId=8&accessToken=754845`});
     console.log(socket);
@@ -49,15 +48,20 @@
 
     sendForm.onsubmit = (e) => {
         let message = textChat.value;
-        socket.emit('message-list', {message})
+        socket.emit('message-list', {id: 1, message})
         e.preventDefault()
     }
 
     socket.on('message-user', (data) => {
-       message.push(data.message) ;
-        for (let i = 0; i < message.length; i++) {
-            chat.innerHTML=`<div>${message[i]}</div>`
+        message.push(data.message);
+
+        message.map(value => value);
+        for (const value of message) {
+            let element = document.createElement('div');
+            element.innerHTML= `${value}`
         }
+        chat.innerHTML = `${message}`
+
     })
 
 

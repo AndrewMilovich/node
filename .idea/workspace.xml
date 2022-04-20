@@ -2,8 +2,94 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f1fd8add-c8b5-4a22-95ac-796b1af4a842" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/mongoose/.eslintcache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mongoose/.eslintignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mongoose/.eslintrc.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mongoose/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mongoose/app.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mongoose/nodemon.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mongoose/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mongoose/src/app.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mongoose/src/config/config.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mongoose/src/constants/constants.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mongoose/src/constants/cookie.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mongoose/src/constants/email.info.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mongoose/src/constants/enums.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mongoose/src/constants/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mongoose/src/constants/regex.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mongoose/src/controller/authController.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mongoose/src/controller/commentController.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mongoose/src/controller/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mongoose/src/controller/postController.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mongoose/src/controller/userController.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mongoose/src/cron/get-new-users.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mongoose/src/cron/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mongoose/src/cron/send-mail-users.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mongoose/src/email-templates/Container.pug" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mongoose/src/email-templates/block.pug" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mongoose/src/email-templates/forgotPassword.pug" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mongoose/src/email-templates/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mongoose/src/email-templates/welcome.pug" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mongoose/src/entity/actionToken.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mongoose/src/entity/comment.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mongoose/src/entity/commonFields.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mongoose/src/entity/post.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mongoose/src/entity/token.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mongoose/src/entity/user.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mongoose/src/enums/ActionTokenTypes.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mongoose/src/error/ErrorHandler.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mongoose/src/interface/comments.interface.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mongoose/src/interface/icommonFields.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mongoose/src/interface/pagination.interface.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mongoose/src/interface/post.interface.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mongoose/src/interface/requestExtended.interface.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mongoose/src/interface/token.interface.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mongoose/src/interface/user.interface.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mongoose/src/middlewares/UserMiddleware.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mongoose/src/middlewares/authMiddleware.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mongoose/src/middlewares/fileMiddleware.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mongoose/src/middlewares/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mongoose/src/migration/1646833472561-Users.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mongoose/src/migration/1646833501804-Posts.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mongoose/src/migration/1646852498175-Comments.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mongoose/src/migration/1647360211825-Token.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mongoose/src/migration/1647710941513-addAccessToken.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mongoose/src/migration/1648736558598-addActionToken.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mongoose/src/models/students.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mongoose/src/models/teacher.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mongoose/src/models/users.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mongoose/src/repositories/actionToken/actionRepository.interface.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mongoose/src/repositories/actionToken/actionTokenRepository.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mongoose/src/repositories/comment/commentRepositories.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mongoose/src/repositories/post/postRepositories.interface.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mongoose/src/repositories/post/postRepostories.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mongoose/src/repositories/token/tokenRepositori.interface.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mongoose/src/repositories/token/tokenRepository.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mongoose/src/repositories/user/UserRepository.interface" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mongoose/src/repositories/user/userRepositories.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mongoose/src/router/apiRouter.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mongoose/src/router/authRouter.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mongoose/src/router/commentRouter.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mongoose/src/router/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mongoose/src/router/postRouter.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mongoose/src/router/studentRouter.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mongoose/src/router/teacherRouter.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mongoose/src/router/userRouter.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mongoose/src/services/authService.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mongoose/src/services/commentService.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mongoose/src/services/emailService.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mongoose/src/services/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mongoose/src/services/postService.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mongoose/src/services/s3.service.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mongoose/src/services/tokenService.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mongoose/src/services/userService.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mongoose/src/validator/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mongoose/src/validator/paramsValidator.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mongoose/src/validator/userValidator.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mongoose/tsconfig.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lesson12/app.html" beforeDir="false" afterPath="$PROJECT_DIR$/lesson12/app.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lesson12/src/app.ts" beforeDir="false" afterPath="$PROJECT_DIR$/lesson12/src/app.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -14,8 +100,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Pug File" />
-        <option value="TypeScript File" />
         <option value="HTML File" />
+        <option value="TypeScript File" />
       </list>
     </option>
   </component>
@@ -49,11 +135,12 @@
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="ts.external.directory.path" value="C:\Users\HP 820 G4\WebstormProjects\node\lesson10\node_modules\typescript\lib" />
+    <property name="ts.external.directory.path" value="C:\Users\HP 820 G4\WebstormProjects\node\lesson12\node_modules\typescript\lib" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\HP 820 G4\WebstormProjects\node\mongoose\src\models" />
       <recent name="C:\Users\HP 820 G4\WebstormProjects\node" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
@@ -79,7 +166,23 @@
       <workItem from="1649174152205" duration="4981000" />
       <workItem from="1649239239186" duration="16837000" />
       <workItem from="1649336473492" duration="8853000" />
-      <workItem from="1649683731245" duration="10740000" />
+      <workItem from="1649683731245" duration="16493000" />
+      <workItem from="1649755157228" duration="626000" />
+      <workItem from="1649756024643" duration="281000" />
+      <workItem from="1649756459783" duration="1054000" />
+      <workItem from="1649757529227" duration="225000" />
+      <workItem from="1649757775900" duration="14129000" />
+      <workItem from="1649860521401" duration="185000" />
+      <workItem from="1649860752448" duration="262000" />
+      <workItem from="1649861265755" duration="376000" />
+      <workItem from="1649866703833" duration="435000" />
+      <workItem from="1649867389891" duration="427000" />
+      <workItem from="1649868170017" duration="8359000" />
+      <workItem from="1649960990763" duration="1088000" />
+      <workItem from="1650009454104" duration="926000" />
+      <workItem from="1650126402203" duration="42000" />
+      <workItem from="1650216590030" duration="4117000" />
+      <workItem from="1650285505348" duration="3888000" />
     </task>
     <task id="LOCAL-00001" summary="add forgot Password and update password user">
       <created>1648823796236</created>
@@ -130,18 +233,25 @@
       <option name="project" value="LOCAL" />
       <updated>1649694304319</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="add messend console">
+      <created>1649695123692</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1649695123692</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
     <option name="exactExcludedFiles">
       <list>
-        <option value="$PROJECT_DIR$/lesson11/node_modules/tsc-watch/example/main.js" />
         <option value="$PROJECT_DIR$/lesson11/node_modules/assert-never/index.js" />
+        <option value="$PROJECT_DIR$/lesson11/node_modules/tsc-watch/example/main.js" />
         <option value="$PROJECT_DIR$/lesson11/node_modules/assert-never/index.d.ts" />
-        <option value="$PROJECT_DIR$/lesson12/node_modules/tsc-watch/example/main.js" />
         <option value="$PROJECT_DIR$/lesson12/node_modules/assert-never/index.js" />
+        <option value="$PROJECT_DIR$/lesson12/node_modules/tsc-watch/example/main.js" />
         <option value="$PROJECT_DIR$/lesson12/node_modules/assert-never/index.d.ts" />
       </list>
     </option>

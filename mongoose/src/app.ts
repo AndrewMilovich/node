@@ -4,6 +4,8 @@ import { createConnection } from 'typeorm';
 import fileUpload from 'express-fileupload';
 import SocketIO from 'socket.io';
 import * as http from 'http';
+import mongoose from 'mongoose';
+import cors from 'cors';
 import { apiRouter } from './router';
 import { config } from './config/config';
 // import { cronRun } from './cron';
@@ -13,8 +15,17 @@ export const RootDir = __dirname;
 const app = express();
 const server = http.createServer(app);
 
+mongoose.connect('mongodb://localhost:27017/students');
+
 // @ts-ignore
 const io = SocketIO(server, { cors: { origin: '*' } });
+
+app.use(cors({
+    origin: 'http://localhost:3000',
+    optionsSuccessStatus: 200, // For legacy browser support
+    methods: 'GET, PUT, POST',
+    credentials: true,
+}));
 
 io.on('connection', (socket:any) => {
     console.log(socket.handshake.query.userId);
@@ -40,11 +51,6 @@ app.use(express.urlencoded());
 app.use(fileUpload());
 
 app.use(apiRouter);
-// @ts-ignore
-app.use('*', (err, req, res, next) => {
-    res.status(err.status || 500)
-        .json(err.message);
-});
 
 server.listen(config.PORT, async () => {
     console.log(`Serves has started on PORT: ${config.PORT}`);
